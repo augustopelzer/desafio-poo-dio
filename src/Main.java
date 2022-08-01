@@ -19,11 +19,13 @@ public class Main {
 
         Mentoria mentoria = new Mentoria();
         mentoria.setTitulo("mentoria de java");
+        mentoria.setMentor("Renan");
         mentoria.setDescricao("descrição mentoria java");
         mentoria.setData(LocalDate.now());
 
         Mentoria mentoria2 = new Mentoria();
         mentoria2.setTitulo("mentoria de js");
+        mentoria2.setMentor("Caio");
         mentoria2.setDescricao("descrição mentoria js");
         mentoria2.setData(LocalDate.now().plusDays(4));
 
@@ -79,7 +81,7 @@ public class Main {
         devAugusto.progredir();
         System.out.println("-");
         System.out.println("Conteúdos Inscritos Augusto:" + devAugusto.getConteudosInscritos());
-        System.out.println("Conteúdos Concluidos João:" + devAugusto.getConteudosConcluidos());
+        System.out.println("Conteúdos Concluidos Augusto:" + devAugusto.getConteudosConcluidos());
         System.out.println("XP:" + devAugusto.calcularTotalXp());
 
     }
